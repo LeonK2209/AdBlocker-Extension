@@ -1,0 +1,22 @@
+/* Generische Selektoren für häufige Werbe-Container.
+   Diese Liste ist bewusst konservativ gehalten, um keine normalen
+   Inhalte versehentlich zu verstecken. Kann bei Bedarf erweitert werden. */
+
+[id*="google_ads"],
+[id*="ad-container"],
+[id*="ad-slot"],
+[id*="banner-ad"],
+[class*="ad-container"],
+[class*="ad-banner"],
+[class*="ad-slot"],
+[class*="adsbygoogle"],
+[class*="sponsored-content"],
+[class*="advertisement"],
+iframe[src*="doubleclick.net"],
+iframe[src*="googlesyndication.com"],
+ins.adsbygoogle {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  width: 0 !important;
+}
